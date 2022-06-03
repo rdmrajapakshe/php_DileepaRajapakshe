@@ -120,6 +120,7 @@
                             <div class="col-md-9">
                                 <select name="CurrentRoutes" class="form-control">
                                     <option value="Rambukkana">Rambukkana</option>
+                                    <option value="kegalle">kegalle</option>
                                 </select>
                             </div>
                         </div>
@@ -202,8 +203,9 @@
                                 <label>Current Routes:</label>
                             </div>
                             <div class="col-md-9">
-                                <select name="CurrentRoutes" class="form-control">
+                                <select name="CurrentRoutes" id="CurrentRoutes" class="form-control">
                                     <option value="Rambukkana">Rambukkana</option>
+                                    <option value="kegalle">kegalle</option>
                                 </select>
                             </div>
                         </div>
@@ -282,7 +284,7 @@
                                 <label>Current Routes:</label>
                             </div>
                             <div class="col-md-9">
-                                <select name="CurrentRoutes" class="form-control">
+                                <select name="CurrentRoutes"  class="form-control">
                                     <option value="Rambukkana">Rambukkana</option>
                                 </select>
                             </div>
@@ -319,6 +321,7 @@
                         $("#Edit_id").val(data.success.id);
                         $("#Edit_id2").val(data.success.id);
                         $("#Edit_Name").val(data.success.Name);
+                        $('.id_100 option[value=val2]').attr('selected','selected');
                         $("#Edit_Email").val(data.success.Email);
                         $("#Edit_Telephone").val(data.success.Telephone);
                         $("#Edit_JD").val(data.success.Joined_Date);
